@@ -1,0 +1,84 @@
+html{box-sizing: border-box;}
+
+body{
+    font-family:arial;
+
+}
+
+.grid div{
+
+padding:10px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(1fr,4);
+grid-template-rows:repeat(1fr,9);
+grid-gap:15px;
+grid-auto-rows:auto;
+
+
+
+}
+.grid{
+grid-template-areas:
+"header header header header"
+"nav nav nav nav"
+"email email email email"
+"first first first first"
+"last last last last"
+"user user user user"
+"pass pass pass pass"
+"signin signin signin signin"
+"footer footer footer footer";
+}
+
+.header{
+grid-area:header;
+text-align: center;
+}
+
+.nav{
+grid-area:nav;
+}
+
+.nav ul{
+list-style-type: none;
+margin-bottom: 45px;
+
+}
+
+.nav li{
+float:left;
+margin-right:25px;
+border: 1px solid black;
+padding: 10px;
+}
+
+.email{
+    grid-area:email;
+}
+
+.first{
+    grid-area:first;
+}
+
+.last{
+grid-area:last;
+}
+
+.user{
+grid-area:user;
+}
+
+.pass{
+grid-area:pass;
+}
+
+.signin{
+grid-area:signin;
+}
+
+.footer{
+grid-area:footer;
+}
